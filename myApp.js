@@ -36,7 +36,7 @@ const createManyPeople = (arrayOfPeople, done) => {
     })
     }
 
-};
+
 
 const findPeopleByName = (personName, done) => {
   done(null /*, data*/);
