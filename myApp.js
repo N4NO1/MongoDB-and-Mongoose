@@ -24,11 +24,6 @@ const createAndSavePerson = (done) => {
     })
 };
 
-arrayOfPeople = [
-    { name: "Nathan Rouse", age: 20, favoriteFoods: ["Sausages", "Chips", "Mash"] },
-    { name: "Sandra Rouse", age: 65, favoriteFoods: ["Sausages", "Chips", "Mash"] },
-    { name: "Philip Rouse", age: 67, favoriteFoods: ["Sausages", "Chips", "Mash"] },
-]
 
 const createManyPeople = (arrayOfPeople, done) => {
     
