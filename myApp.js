@@ -22,10 +22,22 @@ const createAndSavePerson = (done) => {
         if (err) return console.error(err)
         done(null,data)
     })
-
 };
 
 const createManyPeople = (arrayOfPeople, done) => {
+    var arrayOfPeople = [
+        { name: "Nathan Rouse", age: 20, favoriteFoods: ["Sausages", "Chips", "Mash"] },
+        { name: "Sandra Rouse", age: 65, favoriteFoods: ["Sausages", "Chips", "Mash"] },
+        { name: "Philip Rouse", age: 67, favoriteFoods: ["Sausages", "Chips", "Mash"] },
+    ]
+
+    var createManyPeople = function (arrayOfPeople, done) {
+        Person.create(arrayOfPeople, function (err, people) {
+            if (err) return console.log(err)
+            done(null,people)
+        })
+    }
+
   done(null /*, data*/);
 };
 
