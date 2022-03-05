@@ -30,7 +30,7 @@ var arrayOfPeople = [
     { name: "Philip Rouse", age: 67, favoriteFoods: ["Sausages", "Chips", "Mash"] },
 ]
 
-const createManyPeople = (arrayOfPeople, done) => {
+const createManyPeople = (done) => {
     
     Person.create(arrayOfPeople, function (err, people) {
         if (err) return console.log(err)
