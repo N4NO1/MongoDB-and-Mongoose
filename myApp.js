@@ -30,12 +30,10 @@ const createManyPeople = (arrayOfPeople, done) => {
         { name: "Sandra Rouse", age: 65, favoriteFoods: ["Sausages", "Chips", "Mash"] },
         { name: "Philip Rouse", age: 67, favoriteFoods: ["Sausages", "Chips", "Mash"] },
     ]
-
-    var createManyPeople = function (arrayOfPeople, done) {
-        Person.create(arrayOfPeople, function (err, people) {
-            if (err) return console.log(err)
-            done(null,people)
-        })
+    Person.create(arrayOfPeople, function (err, people) {
+        if (err) return console.log(err)
+        done(null,people)
+    })
     }
 
 };
