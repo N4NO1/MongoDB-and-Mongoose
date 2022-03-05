@@ -33,8 +33,8 @@ const createManyPeople = (arrayOfPeople, done) => {
         { name: "Philip Rouse", age: 67, favoriteFoods: ["Sausages", "Chips", "Mash"] },
     ]
     Person.insertMany(arrayOfPeople, function (err, people) {
-        if (err) return console.log(err, people)
-        done(null)
+        if (err) return console.log(err)
+        done(null, people)
     })
     }
 
